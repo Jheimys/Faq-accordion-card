@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* text */
+    --cor-Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --cor-Soft-red: hsl(14, 88%, 65%);
+    --cor-Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --cor-Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Background gradient: */
+    --cor-Soft-violet: hsl(273, 75%, 66%);
+    --cor-Soft-blue: hsl(240, 73%, 65%);
+
+    /* Dividers */
+    --cor-Light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* font */
+    --font-Berkshire-font-family: 'Berkshire Swash', cursive;
+    --font-Inter-font-family: 'Inter', sans-serif;
+    --font-Kumbh-font-family: 'Kumbh Sans', sans-serif;
+    --font-Overpass-font-family: 'Overpass', sans-serif;
+    --font-Roboto-font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 12px;
+    width: 100vw;
+    height: 100vh; 
+    background:linear-gradient(var(--cor-Soft-violet), var(--cor-Soft-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: white url(./images/bg-pattern-desktop.svg) no-repeat 1260% 65%;
+    border-radius: 30px;
+    height: 510px;
+    width: 920px;
+    display: grid;
+    grid-template-areas: "woman questions";
+    grid-gap: 3rem;
+}
+
+.card__image{
+    grid-area: woman;
+    position: relative;
+    width: 472px;
+    overflow: hidden; 
+}
+
+.card__image--woman{
+    position: absolute;
+    transform: translateY(35px) translateX(-75px);
+}
+
+.box{
+position: absolute;
+transform: translateY(100%) translateX(-65%);
+
+}
+
+.accordian__card{
+    grid-area: questions;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title__accordian{
+    font-size: 2rem;
+    font-family: var(--font-Kumbh-font-family);
+}
+
+.questions__accoridan{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions-answer__accordian{
+    width: 350px;
+    border-bottom: 1px solid var(--cor-Light-grayish-blue);
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.question :hover{
+    color: var(--cor-Soft-red);
+}
+
+.title__question{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--cor-Very-dark-grayish-blue);
+    margin: 1.4rem 0rem;
+}
+
+.active .title__question {
+    color:black;
+    font-weight: bold;
+}
+
+.question img {
+    align-self: center;
+}
+
+.answer {
+    display: none;
+}
+
+.active .answer{
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--cor-Very-dark-desaturated-blue);
+    transition: all .3s ease-in;
+}
+
