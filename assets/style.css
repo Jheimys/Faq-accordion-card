@@ -32,6 +32,7 @@ body {
     height: 100vh; 
     background:linear-gradient(var(--cor-Soft-violet), var(--cor-Soft-blue));
     background-repeat: no-repeat;
+    background-size:cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +42,7 @@ body {
    background-color: white;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 1260% 65% ;
+    background-position: 1260% 65%;
     border-radius: 1.875rem;
     height: 31.875rem;
     width: 57.5rem;
@@ -132,24 +133,26 @@ transform: translateY(100%) translateX(-65%);
 @media (max-width: 1340px) {
     
     .card {
-        position: relative;
-        width: 90vw;
-        height:80vh; 
+        position: relative; 
+        /* width: 90vw;
+        height:80vh;  */
+        width: auto;
+        height: auto;
         grid-template-areas: 
         "image"
         "questions";
         row-gap: 1.5rem;
-        margin-top: 3rem;  
+        /* margin-top: 3rem;   */
     }
 
     .card__image {
-        position: relative; 
+        position: absolute; 
         background-image: url(./images/bg-pattern-mobile.svg); 
         background-repeat:no-repeat;
         background-position: 30% 20%;
         background-size: contain;
-        width: 130%;
-        height: 210%;
+        width: 120%;
+        height: 16%;
         transform: translateY(0px);  
     }
 
