@@ -134,15 +134,13 @@ transform: translateY(100%) translateX(-65%);
     
     .card {
         position: relative; 
-        /* width: 90vw;
-        height:80vh;  */
-        width: auto;
+        width: 21rem; 
+        /* width: auto; */
         height: auto;
         grid-template-areas: 
         "image"
         "questions";
         row-gap: 1.5rem;
-        /* margin-top: 3rem;   */
     }
 
     .card__image {
@@ -185,9 +183,10 @@ transform: translateY(100%) translateX(-65%);
        
     }
 
-    .questions-answer__accordian{
+    .questions-answer__accordian{ 
       width: 17rem; 
-      margin-left: 1rem
+      margin-left: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     .question{
