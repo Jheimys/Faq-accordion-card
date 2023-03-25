@@ -139,7 +139,7 @@ transform: translateY(100%) translateX(-65%);
         grid-template-areas: 
         "image"
         "questions";
-        row-gap: 5rem;
+        row-gap: 1rem;
         margin-top: 5rem;
     }
 
