@@ -145,7 +145,8 @@ transform: translateY(100%) translateX(-65%);
 
     .card__image {
         position:fixed;
-        background-image: url(./images/bg-pattern-mobile.svg); 
+        background-image: url(../images/bg-pattern-mobile.svg);
+        /* background-image: url(./images/bg-pattern-mobile.svg);  */
         background-repeat:no-repeat;
         background-position: 30% 20%;
         background-size: contain;
@@ -161,7 +162,7 @@ transform: translateY(100%) translateX(-65%);
 
     .card__mobile{
         position: absolute;
-        background-image: url(./images/illustration-woman-online-mobile.svg);
+        background-image: url(../images/illustration-woman-online-mobile.svg);
         background-repeat:no-repeat;
         background-position: 30% 20%;
         background-size: contain;
@@ -186,8 +187,12 @@ transform: translateY(100%) translateX(-65%);
 
     .questions-answer__accordian{ 
       width: 16rem; 
-      margin-left: 0.5rem;
+      margin-left: 1.5rem;
       margin-bottom: 0.6rem;
+    }
+
+    .question {
+      padding: 0rem;  
     }
 
     .question, .answer{
